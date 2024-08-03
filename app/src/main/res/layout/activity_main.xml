@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/img">
+
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/tv_all_pdf_reader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All PDF Reader"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                />
+
+            <ImageView
+                android:layout_gravity="bottom"
+                android:id="@+id/img_crown"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/king"
+                android:layout_marginStart="16dp"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/white"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/img_checklist"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/checklist"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/img_pencil"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/shortlist"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="bottom"
+                />
+
+            <ImageView
+                android:id="@+id/img_refresh"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/sett"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="bottom"
+                />
+
+        </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuLayout"
+        android:layout_marginTop="20dp"
+        app:tabGravity="center"
+        app:tabBackground="@drawable/bottom_curved"
+        app:tabIconTintMode="add"
+        app:tabTextColor="#000000"
+        app:tabIndicatorGravity="top"
+        android:layout_margin="10dp"
+
+
+        >
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/opponasTab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="উপন্যাস"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/golpoTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="গল্প"
+
+
+            />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/kobitaTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="কবিতা"
+
+
+            />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="নাটক"
+
+
+            />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="চলচ্চিত্র"
+
+
+            />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="জীবনী"
+
+
+            />
+
+
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout"
+        android:layout_below="@id/tabLayout"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            >
+
+
+
+           <ListView
+               android:id="@+id/listView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+
+
+
+
+
+
+
+
+           </ListView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
